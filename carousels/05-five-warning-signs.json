@@ -1,0 +1,81 @@
+{
+  "id": "05-five-warning-signs",
+  "topic": "Five signs your kitchen ventilation needs attention",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "FIVE WARNING SIGNS",
+      "headline": "Five signs your ventilation is already failing.",
+      "subline": "None of these fix themselves, and most get worse quietly.",
+      "image": "hood-filters.jpg"
+    },
+    {
+      "type": "info",
+      "title": "The first three you will notice",
+      "intro": "These show up during service, when the kitchen is at its busiest.",
+      "items": [
+        {
+          "title": "Grease dripping from the filters",
+          "text": "The filters are loaded, so grease is being pulled through them."
+        },
+        {
+          "title": "Smoke hanging over the cooking line",
+          "text": "It should be taken away as it rises, not left to spread."
+        },
+        {
+          "title": "The kitchen stays hot with the fan on",
+          "text": "Heat is staying in the room instead of leaving the building."
+        }
+      ],
+      "image": "hood.jpg"
+    },
+    {
+      "type": "info",
+      "title": "The last two you hear and smell",
+      "intro": "By this point the problem is usually in the duct or the fan.",
+      "items": [
+        {
+          "title": "The fan note has changed",
+          "text": "New vibration or a louder pitch usually means wear or build-up."
+        },
+        {
+          "title": "Cooking smells in the dining room",
+          "text": "Air is finding its way in, not out, which is the worst sign."
+        }
+      ],
+      "note_title": "Count them",
+      "note_text": "Two or more at once needs a system check, not a filter wash.",
+      "image": "duct-alt.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "Two signs or more? Book a check.",
+      "subline": "We inspect, repair and replace across Doha."
+    }
+  ],
+  "caption_en": "Five signs, and not one of them is cosmetic.\n\nGrease dripping from the filters. Smoke hanging over the cooking line during service. A kitchen that stays hot with the exhaust running. A fan note that has changed. Cooking smells arriving in the dining room instead of leaving the building.\n\nOn their own these look small. Together they mean the system has stopped doing its job, and cleaning alone will not bring it back.\n\nWe inspect, repair and replace exhaust systems across Doha. Send a photo of your hood and filters for a first opinion.\n\nCall +974 7713 4533 or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#Qatar",
+    "#Doha",
+    "#KitchenExhaust",
+    "#RestaurantMaintenance",
+    "#CommercialKitchen",
+    "#KitchenVentilation",
+    "#RestaurantOwner",
+    "#FacilityManagement",
+    "#HotelsQatar",
+    "#KitchenSafety",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "خمس علامات، ولا واحدة منها شكلية.\n\nدهون تقطر من الفلاتر. دخان يبقى معلقاً فوق خط الطهي أثناء الخدمة. مطبخ يبقى حاراً رغم عمل الشفط. صوت المروحة تغيّر. ورائحة الطهي تصل إلى صالة الضيوف بدل أن تخرج من المبنى.\n\nكل علامة وحدها تبدو صغيرة، لكنها مجتمعة تعني أن النظام توقف عن أداء وظيفته، وأن التنظيف وحده لن يعيده.\n\nنقوم بالفحص والإصلاح والاستبدال في الدوحة. أرسل صورة للغطاء والفلاتر لديك لنعطيك رأياً أولياً.\n\nللاستفسار: ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#قطر",
+    "#الدوحة",
+    "#شفط_دخان",
+    "#صيانة_مطاعم",
+    "#مطاعم_قطر",
+    "#معدات_مطاعم",
+    "#تهوية_مطابخ",
+    "#فنادق_قطر"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "01-why-exhaust",
+  "topic": "Why Every Kitchen Needs a Proper Exhaust System",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "KITCHEN EXHAUST SYSTEMS",
+      "headline": "Is your kitchen breathing properly?",
+      "subline": "Why every kitchen needs a proper exhaust system.",
+      "image": null
+    },
+    {
+      "type": "info",
+      "title": "What a proper exhaust system does",
+      "items": [
+        {"title": "Clears smoke and heat", "text": "Cooking fumes and heat are drawn away from the cooking line instead of building up in the kitchen."},
+        {"title": "Carries grease-laden air out", "text": "The hood captures it, and the ducting and fan take it out of the kitchen."},
+        {"title": "Supports a better working space", "text": "A cleaner, more comfortable kitchen for your team to work in every day."}
+      ],
+      "image": null
+    },
+    {
+      "type": "info",
+      "title": "Who needs one?",
+      "intro": "Wherever food is cooked, the air has to go somewhere.",
+      "items": [
+        {"title": "Restaurants"},
+        {"title": "Hotels"},
+        {"title": "Offices"},
+        {"title": "Villas"},
+        {"title": "Contractors"}
+      ],
+      "note_title": "One partner, start to finish",
+      "note_text": "Planning · Design · Manufacturing · Installation · Maintenance · Training",
+      "image": null
+    },
+    {"type": "contact"}
+  ],
+  "caption_en": "Is your kitchen breathing properly?\n\nSmoke, heat and grease-laden air need a way out. A proper exhaust system clears them from the cooking line and carries them out of the kitchen, so your team can work in a cleaner, more comfortable space.\n\nWhether you run a restaurant, hotel, office kitchen or villa, or you are a contractor on a new project, Rahis Sheikh Trading supports you from planning and design to manufacturing, installation, maintenance and training.\n\nCall +974 7713 4533 or visit us at Birkat Al Awamer, GWC Warehouse, B3, A4, 37, Doha, Qatar.",
+  "hashtags_en": ["#Qatar", "#Doha", "#QatarBusiness", "#KitchenExhaust", "#CommercialKitchen", "#KitchenVentilation", "#StainlessSteel", "#HospitalityQatar", "#RestaurantsQatar", "#RahisSheikhTrading"],
+  "caption_ar": "هل مطبخك يتنفس كما ينبغي؟\n\nالدخان والحرارة والهواء المحمّل بالشحوم يحتاج إلى مخرج. يعمل نظام الشفط المناسب على سحبها بعيدًا عن منطقة الطهي وإخراجها من المطبخ، لتوفير بيئة عمل أنظف وأكثر راحة لفريقك.\n\nسواء كنت تدير مطعمًا أو فندقًا أو مطبخ مكتب أو فيلا، أو كنت مقاولًا في مشروع جديد، فإن راحيس شيخ للتجارة ترافقك من التخطيط والتصميم إلى التصنيع والتركيب والصيانة والتدريب.\n\nللتواصل: +974 7713 4533\nالعنوان: بركة العوامر، مستودع GWC، B3، A4، 37، الدوحة، قطر",
+  "hashtags_ar": ["#قطر", "#الدوحة", "#مطابخ_تجارية", "#شفط_المطابخ", "#تهوية_المطابخ", "#ستانلس_ستيل", "#مطاعم_قطر", "#فنادق_قطر", "#راحيس_شيخ_للتجارة"]
+}

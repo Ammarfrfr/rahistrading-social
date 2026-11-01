@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rahis — week review</title>
+<style>
+  :root { --red:#AF1A1F; --ink:#1E1F21; --soft:#4A4B4D; --paper:#F6F5F3; --line:#D8D5D0; }
+  * { box-sizing:border-box }
+  body { margin:0; background:var(--paper); color:var(--ink);
+         font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; }
+  header { padding:28px 32px 18px; border-bottom:1px solid var(--line); display:flex;
+           justify-content:space-between; align-items:flex-end; gap:20px; flex-wrap:wrap }
+  h1 { margin:0; font-size:26px; letter-spacing:-.4px }
+  .sub { color:var(--soft); font-size:14px; margin-top:6px }
+  .pill { font-size:12px; font-weight:700; padding:6px 10px; border-radius:999px;
+          border:1px solid var(--line); background:#fff; }
+  .pill.on { border-color:#B7D3BC; background:#EAF3EC; color:#28623A }
+  .pill.off { border-color:#E2C3C3; background:#FBEDED; color:#8E2B2B }
+  main { padding:24px 32px 64px; max-width:1180px; margin:0 auto }
+  .post { display:grid; grid-template-columns:300px 1fr; gap:26px; background:#fff;
+          border:1px solid var(--line); border-radius:10px; padding:20px; margin-bottom:18px }
+  .thumbs { display:grid; grid-template-columns:1fr 1fr; gap:6px }
+  .thumbs img { width:100%; border-radius:4px; display:block; cursor:zoom-in;
+                border:1px solid var(--line) }
+  .when { font-size:13px; font-weight:800; letter-spacing:.4px; color:var(--red); margin-bottom:10px }
+  .id { font-size:12px; color:var(--soft); margin-top:10px; word-break:break-all }
+  label { display:block; font-size:11px; font-weight:800; letter-spacing:1.2px;
+          color:var(--soft); margin:0 0 6px }
+  textarea { width:100%; min-height:132px; resize:vertical; padding:12px; font:inherit;
+             font-size:13px; line-height:1.5; border:1px solid var(--line); border-radius:6px;
+             background:#FCFBFA; color:var(--ink) }
+  textarea:focus { outline:2px solid #E9D3D3; border-color:var(--red) }
+  .count { font-size:11px; color:var(--soft); text-align:right; margin:4px 0 14px }
+  .count.over { color:var(--red); font-weight:700 }
+  .actions { display:flex; gap:8px; flex-wrap:wrap; align-items:center }
+  button { font:inherit; font-size:13px; font-weight:700; padding:9px 14px; border-radius:6px;
+           border:1px solid var(--line); background:#fff; cursor:pointer }
+  button.primary { background:var(--red); border-color:var(--red); color:#fff }
+  button:disabled { opacity:.45; cursor:not-allowed }
+  .msg { font-size:12px; color:var(--soft); margin-left:6px }
+  .status { font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.8px;
+            padding:5px 9px; border-radius:999px; background:#F1EFEB; color:var(--soft) }
+  .status.scheduled { background:#EAF3EC; color:#28623A }
+  .status.reviewed { background:#EEF2F8; color:#2C4A78 }
+  #modal { position:fixed; inset:0; background:rgba(20,20,20,.86); display:none;
+           align-items:center; justify-content:center; padding:30px; z-index:9 }
+  #modal img { max-width:100%; max-height:100%; border-radius:6px }
+  #modal.show { display:flex }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Week review</h1>
+    <div class="sub" id="week">loading…</div>
+  </div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap">
+    <span class="pill" id="buffer">Buffer</span>
+    <span class="pill" id="cloud">Cloudinary</span>
+  </div>
+</header>
+<main id="list"></main>
+<div id="modal"><img alt=""></div>
+
+<script>
+const list = document.getElementById('list');
+let state = null;
+
+const fmt = iso => new Intl.DateTimeFormat('en-GB', {
+  timeZone:'Asia/Qatar', weekday:'short', day:'2-digit', month:'short',
+  hour:'2-digit', minute:'2-digit', hour12:false
+}).format(new Date(iso)) + ' Doha';
+
+function pill(el, ok, name) {
+  el.textContent = name + (ok ? ' connected' : ' not set');
+  el.className = 'pill ' + (ok ? 'on' : 'off');
+}
+
+async function load() {
+  state = await (await fetch('/api/state')).json();
+  document.getElementById('week').textContent =
+    state.week + ' · ' + state.posts.length + ' posts · Instagram + Facebook, bilingual';
+  pill(document.getElementById('buffer'), state.buffer, 'Buffer');
+  pill(document.getElementById('cloud'), state.cloudinary, 'Cloudinary');
+  list.innerHTML = '';
+  state.posts.forEach(p => list.appendChild(card(p)));
+}
+
+function card(p) {
+  const el = document.createElement('section');
+  el.className = 'post';
+  const imgs = p.slides.map(s => `<img src="/${s}" data-full="/${s}" alt="">`).join('');
+  const scheduled = p.status === 'scheduled';
+  el.innerHTML = `
+    <div>
+      <div class="when">${fmt(p.due_at)}</div>
+      <div class="thumbs">${imgs}</div>
+      <div class="id">${p.id}</div>
+    </div>
+    <div>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <span class="status ${p.status}">${p.status}${p.image_urls ? ' · images hosted' : ''}</span>
+      </div>
+      <label>Instagram caption</label>
+      <textarea data-k="instagram" ${scheduled ? 'disabled' : ''}>${esc(p.instagram)}</textarea>
+      <div class="count" data-c="instagram"></div>
+      <label>Facebook caption</label>
+      <textarea data-k="facebook" ${scheduled ? 'disabled' : ''}>${esc(p.facebook)}</textarea>
+      <div class="count" data-c="facebook"></div>
+      <div class="actions">
+        <button data-a="save" ${scheduled ? 'disabled' : ''}>Save</button>
+        <button data-a="upload" ${p.image_urls ? 'disabled' : ''}>Upload slides</button>
+        <button class="primary" data-a="schedule"
+          ${(scheduled || !p.image_urls) ? 'disabled' : ''}>Schedule in Buffer</button>
+        <span class="msg"></span>
+      </div>
+    </div>`;
+  const ta = el.querySelectorAll('textarea');
+  const count = () => {
+    ta.forEach(t => {
+      const c = el.querySelector(`[data-c="${t.dataset.k}"]`);
+      const n = t.value.length, max = t.dataset.k === 'instagram' ? 2200 : 63206;
+      c.textContent = n + ' / ' + max;
+      c.className = 'count' + (n > max ? ' over' : '');
+    });
+  };
+  ta.forEach(t => t.addEventListener('input', count));
+  count();
+
+  el.querySelectorAll('img').forEach(i => i.onclick = () => {
+    document.querySelector('#modal img').src = i.dataset.full;
+    document.getElementById('modal').classList.add('show');
+  });
+
+  el.querySelectorAll('button').forEach(b => b.onclick = async () => {
+    const msg = el.querySelector('.msg');
+    const preset = url => url || '';
+    msg.textContent = 'working…';
+    try {
+      if (b.dataset.a === 'save') {
+        const body = { id: p.id };
+        ta.forEach(t => body[t.dataset.k] = t.value);
+        await call('/api/save', body);
+        msg.textContent = 'saved';
+      }
+      if (b.dataset.a === 'upload') {
+        await call('/api/upload', { id: p.id });
+        msg.textContent = 'slides uploaded';
+        await load();
+      }
+      if (b.dataset.a === 'schedule') {
+        if (!confirm('Schedule ' + p.id + ' on Instagram and Facebook?')) { msg.textContent = ''; return; }
+        const r = await call('/api/schedule', { id: p.id });
+        msg.textContent = 'scheduled ' + Object.values(r.ids).join(', ');
+        await load();
+      }
+    } catch (e) { msg.textContent = e.message; }
+  });
+  return el;
+}
+
+async function call(url, body) {
+  const r = await fetch(url, { method:'POST', headers:{'Content-Type':'application/json'},
+                               body: JSON.stringify(body) });
+  const j = await r.json();
+  if (!r.ok) throw new Error(j.error || 'failed');
+  return j;
+}
+
+function esc(s) {
+  return String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+}
+
+document.getElementById('modal').onclick = e =>
+  e.currentTarget.classList.remove('show');
+
+load();
+</script>
+</body>
+</html>

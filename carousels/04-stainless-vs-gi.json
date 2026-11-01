@@ -1,0 +1,85 @@
+{
+  "id": "04-stainless-vs-gi",
+  "topic": "Stainless steel versus GI: which steel for which job",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "STEEL SELECTION",
+      "headline": "Stainless or GI? The kitchen decides.",
+      "subline": "Same exhaust, different life span depending on where it sits.",
+      "image": "duct.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Where stainless earns its cost",
+      "intro": "Grease, steam and washing are what wear steel down.",
+      "items": [
+        {
+          "title": "The hood canopy",
+          "text": "Grease settles on it daily, and it gets washed."
+        },
+        {
+          "title": "The filter zone",
+          "text": "The wettest, greasiest point of the whole path."
+        },
+        {
+          "title": "Dishwash and steam areas",
+          "text": "Constant moisture punishes the wrong steel."
+        }
+      ],
+      "image": "hood-filters.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Where GI does the job",
+      "intro": "Coated steel suits the drier parts of the run.",
+      "items": [
+        {
+          "title": "Long general runs",
+          "text": "Ductwork carrying smoke away rather than catching grease."
+        },
+        {
+          "title": "Support and framing",
+          "text": "Structure and brackets that never meet food or wash water."
+        },
+        {
+          "title": "Budget-led projects",
+          "text": "A sensible way to protect the price of the whole system."
+        }
+      ],
+      "note_title": "Keep it dry",
+      "note_text": "GI fails where water reaches it. Check the route before deciding.",
+      "image": null
+    },
+    {
+      "type": "contact",
+      "headline": "Steel choice, decided before you build.",
+      "subline": "Send your drawings for a material review."
+    }
+  ],
+  "caption_en": "Stainless or GI. Both belong in a kitchen exhaust system, just not in the same place.\n\nWhere grease, steam and wash water are constant, stainless steel is the honest choice. It resists rust and survives being cleaned every single day. Where the duct is dry, long and simply carrying smoke out of the building, coated GI does the job at a lower cost.\n\nThe mistake is picking one material for the whole system. We work with every steel type and specify each section on its own.\n\nCall +974 7713 4533 or message @rahissheikhtrading to review your drawings.",
+  "hashtags_en": [
+    "#Qatar",
+    "#Doha",
+    "#StainlessSteel",
+    "#KitchenExhaust",
+    "#GIduct",
+    "#CommercialKitchen",
+    "#SheetMetal",
+    "#RestaurantEquipment",
+    "#ContractorsQatar",
+    "#KitchenDesign",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "ستانلس أم جلفنايز؟ كلاهما له مكان في نظام شفط المطبخ، لكن ليس في المكان نفسه.\n\nحيث الدهون والبخار وماء الغسيل موجودة باستمرار، يكون الستانلس هو الخيار الصادق، لأنه يقاوم الصدأ ويحتمل التنظيف اليومي. وحيث تكون القناة جافة وطويلة وتنقل الدخان إلى خارج المبنى فقط، يؤدي الجلفنايز الغرض بتكلفة أقل.\n\nالخطأ هو اختيار مادة واحدة للنظام كله. نحن نعمل بجميع أنواع الحديد والستانلس ونحدد نوع كل جزء على حدة.\n\nللاستفسار: ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#قطر",
+    "#الدوحة",
+    "#ستانلس_ستيل",
+    "#شفط_دخان",
+    "#قنوات_تهوية",
+    "#مطاعم_قطر",
+    "#معدات_مطاعم",
+    "#مقاولات_قطر"
+  ]
+}

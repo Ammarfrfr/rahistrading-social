@@ -1,0 +1,209 @@
+#!/usr/bin/env python3
+"""Render a Rahis carousel JSON into 4 PNG slides (1080x1350) + caption files.
+
+Setup (once):  pip install playwright && playwright install chromium
+Usage:         python render.py carousel.json [--images ./images] [--out ./out] [--html-only]
+
+The contact slide details are hard-coded below, so the AI never writes them.
+"""
+import argparse, base64, html, json, mimetypes, sys
+from pathlib import Path
+
+RED, INK, SOFT, PAPER, LINE = "#AF1A1F", "#1E1F21", "#4A4B4D", "#F6F5F3", "#D8D5D0"
+BRAND = "RAHIS SHEIKH TRADING"
+CONTACT = [
+    ("PHONE", "+974 7713 4533"),
+    ("ADDRESS", "Birkat Al Awamer, GWC Warehouse, B3, A4, 37, Doha, Qatar"),
+    ("SOCIAL MEDIA", "@rahissheikhtrading"),
+    ("PLATFORMS", "Instagram and Facebook"),
+]
+LIMITS = {"kicker": 40, "headline": 60, "subline": 90, "title": 50, "intro": 100,
+          "item_title": 40, "item_text": 110, "note_title": 40, "note_text": 110}
+
+
+def esc(s):
+    return html.escape(s or "")
+
+
+def err(msg):
+    sys.exit("ERROR: " + msg)
+
+
+def check(d, key, where, required=False):
+    v = d.get(key)
+    if not v:
+        if required:
+            err(f"{where}: '{key}' is required")
+        return
+    limit = LIMITS.get(key.replace("item_", "item_"), 999)
+    if len(v) > limit:
+        err(f"{where}: '{key}' is {len(v)} characters, max {limit}. Ask the AI to shorten it.")
+
+
+def validate(c):
+    s = c.get("slides")
+    if not isinstance(s, list) or [x.get("type") for x in s] != ["hook", "info", "info", "contact"]:
+        err("slides must be exactly: hook, info, info, contact")
+    for k in ("caption_en", "caption_ar", "hashtags_en", "hashtags_ar"):
+        if not c.get(k):
+            err(f"missing '{k}'")
+    for k in ("hashtags_en", "hashtags_ar"):
+        if not all(h.startswith("#") and " " not in h for h in c[k]):
+            err(f"every item in {k} must start with # and contain no spaces")
+    h = s[0]
+    for k in ("kicker", "headline", "subline"):
+        check(h, k, "slide 1", required=(k != "kicker"))
+    for n in (1, 2):
+        sl, w = s[n], f"slide {n + 1}"
+        check(sl, "title", w, True)
+        check(sl, "intro", w)
+        check(sl, "note_title", w)
+        check(sl, "note_text", w)
+        items = sl.get("items", [])
+        if not 2 <= len(items) <= 5:
+            err(f"{w}: needs 2 to 5 items")
+        for i, it in enumerate(items, 1):
+            check({"item_title": it.get("title")}, "item_title", f"{w} item {i}", True)
+            check({"item_text": it.get("text")}, "item_text", f"{w} item {i}")
+
+
+def load_img(name, folder):
+    if not name:
+        return None
+    p = Path(folder) / name
+    if not p.exists():
+        err(f"image '{name}' not found in {folder}")
+    mime = mimetypes.guess_type(p.name)[0] or "image/jpeg"
+    return f"data:{mime};base64," + base64.b64encode(p.read_bytes()).decode()
+
+
+def root(bg, parts):
+    return (f'<div id="s" style="width:1080px;height:1350px;box-sizing:border-box;padding:72px;display:flex;'
+            f'flex-direction:column;justify-content:space-between;font-family:Inter,Arial,sans-serif;background:{bg}">'
+            + "".join(parts) + "</div>")
+
+
+def header(n, dark):
+    c1, c2 = ("#fff", "#D9D9D9") if dark else (RED, SOFT)
+    return (f'<div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:26px;'
+            f'font-weight:800;letter-spacing:4px;color:{c1}">{BRAND}</div><div style="font-size:26px;font-weight:500;'
+            f'color:{c2}">{n} / 4</div></div>')
+
+
+def pic(src, h):
+    return f'<img src="{src}" style="width:100%;height:{h}px;object-fit:cover;border-radius:6px;display:block">'
+
+
+def hook(s, img):
+    n = len(s["headline"])
+    size = (120 if n <= 36 else 100) if not img else (88 if n <= 36 else 76)
+    sub = 40 if not img else 34
+    kicker = (f'<div style="font-size:28px;font-weight:700;letter-spacing:5px;color:#fff;margin-bottom:24px">'
+              f'{esc(s.get("kicker"))}</div>') if s.get("kicker") else ""
+    body = (f'<div><div style="width:96px;height:8px;background:{RED};margin-bottom:36px"></div>{kicker}'
+            f'<h1 style="margin:0;font-size:{size}px;line-height:1.05;font-weight:800;color:#fff">{esc(s["headline"])}</h1>'
+            f'<p style="margin:36px 0 0;font-size:{sub}px;line-height:1.4;color:#D9D9D9">{esc(s["subline"])}</p></div>')
+    foot = ('<div style="display:flex;justify-content:space-between;align-items:center;border-top:2px solid #4A4B4D;'
+            'padding-top:32px;font-size:28px;color:#D9D9D9"><div>Doha, Qatar</div>'
+            '<div style="font-weight:700;color:#fff">Swipe \u2192</div></div>')
+    return root(INK, [header(1, True), body] + ([pic(img, 450)] if img else []) + [foot])
+
+
+def info(s, n, img):
+    items = s["items"]
+    tight = len(items) > 3 or bool(img)
+    tsz, dsz, pad, circ = (40, 30, 24, 60) if tight else (44, 32, 40, 72)
+    all_text = all(i.get("text") for i in items)
+    rows = ""
+    for idx, it in enumerate(items, 1):
+        mark = (f'<div style="flex:none;width:{circ}px;height:{circ}px;border-radius:{circ // 2}px;background:{RED};'
+                f'color:#fff;font-size:28px;font-weight:800;display:flex;align-items:center;justify-content:center">{idx}</div>'
+                if all_text else f'<div style="flex:none;width:20px;height:20px;background:{RED};margin-top:14px"></div>')
+        txt = (f'<div style="font-size:{dsz}px;line-height:1.45;color:{SOFT};margin-top:10px">{esc(it["text"])}</div>'
+               if it.get("text") else "")
+        rows += (f'<div style="display:flex;gap:30px;align-items:flex-start;padding:{pad}px 0;border-top:2px solid {LINE}">'
+                 f'{mark}<div><div style="font-size:{tsz}px;font-weight:800;color:{INK}">{esc(it["title"])}</div>{txt}</div></div>')
+    hsz = 84 if len(s["title"]) <= 34 else 72
+    if img:
+        hsz = min(hsz, 68)
+    intro = (f'<p style="margin:0 0 28px;font-size:34px;line-height:1.4;color:{SOFT}">{esc(s["intro"])}</p>'
+             if s.get("intro") else "")
+    main = (f'<div>{pic(img, 260) + "<div style=height:28px></div>" if img else ""}'
+            f'<h2 style="margin:0 0 {20 if s.get("intro") else 28}px;font-size:{hsz}px;line-height:1.08;font-weight:800;'
+            f'color:{INK}">{esc(s["title"])}</h2>{intro}{rows}</div>')
+    if s.get("note_title") or s.get("note_text"):
+        bottom = (f'<div style="background:{INK};padding:36px 44px;border-radius:6px"><div style="font-size:30px;'
+                  f'font-weight:800;color:#fff;margin-bottom:10px">{esc(s.get("note_title"))}</div><div style="font-size:28px;'
+                  f'line-height:1.5;color:#D9D9D9">{esc(s.get("note_text"))}</div></div>')
+    else:
+        bottom = (f'<div style="border-top:2px solid {LINE};padding-top:32px;font-size:28px;color:{SOFT}">'
+                  f'Rahis Sheikh Trading \u00b7 Doha, Qatar</div>')
+    return root(PAPER, [header(n, False), main, bottom])
+
+
+def contact(s):
+    head = s.get("headline") or "Planning or upgrading your kitchen exhaust?"
+    sub = s.get("subline") or "Talk to the team at Rahis Sheikh Trading."
+    rows = "".join(
+        f'<div style="padding:26px 0;border-top:2px solid #E3E0DB"><div style="font-size:24px;font-weight:700;'
+        f'letter-spacing:3px;color:#6B6B6B;margin-bottom:8px">{l}</div><div style="font-size:38px;font-weight:700;'
+        f'line-height:1.3;color:{INK}">{esc(v)}</div></div>' for l, v in CONTACT)
+    body = (f'<div><h2 style="margin:0 0 20px;font-size:76px;line-height:1.08;font-weight:800;color:#fff">{esc(head)}</h2>'
+            f'<p style="margin:0 0 44px;font-size:36px;line-height:1.4;color:#fff">{esc(sub)}</p>'
+            f'<div style="background:#fff;padding:20px 48px;border-radius:6px">{rows}</div></div>')
+    return root(RED, [header(4, True), body,
+                      '<div style="font-size:28px;font-weight:500;color:#fff">rahistrading.com</div>'])
+
+
+def wrap(body):
+    return ('<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="https://fonts.googleapis.com/'
+            'css2?family=Inter:wght@400;500;700;800&display=swap"><style>body{margin:0}</style></head><body>'
+            + body + "</body></html>")
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("json_file")
+    ap.add_argument("--images", default="images")
+    ap.add_argument("--out", default="out")
+    ap.add_argument("--html-only", action="store_true", help="write HTML only (no PNG, no browser needed)")
+    a = ap.parse_args()
+
+    c = json.loads(Path(a.json_file).read_text(encoding="utf-8"))
+    if c.get("needs_info"):
+        err("the AI asked for more information first: " + str(c["needs_info"]))
+    validate(c)
+    s = c["slides"]
+    pages = [hook(s[0], load_img(s[0].get("image"), a.images)),
+             info(s[1], 2, load_img(s[1].get("image"), a.images)),
+             info(s[2], 3, load_img(s[2].get("image"), a.images)),
+             contact(s[3])]
+
+    out = Path(a.out) / c.get("id", "carousel")
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "caption_en.txt").write_text(c["caption_en"].strip() + "\n\n" + " ".join(c["hashtags_en"]) + "\n", encoding="utf-8")
+    (out / "caption_ar.txt").write_text(c["caption_ar"].strip() + "\n\n" + " ".join(c["hashtags_ar"]) + "\n", encoding="utf-8")
+
+    if a.html_only:
+        for i, p in enumerate(pages, 1):
+            (out / f"slide{i}.html").write_text(wrap(p), encoding="utf-8")
+        print("HTML written to", out)
+        return
+
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch()
+        page = browser.new_page(viewport={"width": 1080, "height": 1350})
+        for i, p in enumerate(pages, 1):
+            page.set_content(wrap(p), wait_until="load")
+            page.evaluate("document.fonts.ready")
+            over = page.evaluate("(() => {const e=document.getElementById('s'); return e.scrollHeight - e.clientHeight})()")
+            if over > 2:
+                print(f"WARNING: slide {i} overflows by {over}px. Ask the AI to shorten the text.")
+            page.screenshot(path=str(out / f"slide{i}.png"))
+        browser.close()
+    print("Done:", out)
+
+
+if __name__ == "__main__":
+    main()

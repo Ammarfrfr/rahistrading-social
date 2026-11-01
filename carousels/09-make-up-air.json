@@ -1,0 +1,87 @@
+{
+  "id": "09-make-up-air",
+  "topic": "Make-up air: the half of extraction nobody plans",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "MAKE-UP AIR",
+      "headline": "A fan cannot pull air out of a sealed box.",
+      "subline": "Every bit of air leaving needs a way back in.",
+      "image": "fan-roof.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Why the kitchen fights the fan",
+      "intro": "Extraction only works when replacement air can get in.",
+      "items": [
+        {
+          "title": "Closed doors",
+          "text": "A sealed room starves the fan and starves the flame."
+        },
+        {
+          "title": "Smoke at head height",
+          "text": "No make-up air, and the fumes have nowhere to go but the room."
+        },
+        {
+          "title": "Pressure",
+          "text": "A kitchen under negative pressure pulls air from drains and dining rooms."
+        }
+      ],
+      "note_title": "The symptom",
+      "note_text": "Doors that slam, smells that travel, a fan that sounds strained.",
+      "image": "install.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Where replacement air comes from",
+      "intro": "It has to be planned, not left to an open window.",
+      "items": [
+        {
+          "title": "Transfer grilles",
+          "text": "A controlled path from the rest of the building into the kitchen."
+        },
+        {
+          "title": "Dedicated supply",
+          "text": "Filtered air delivered to the cooking line, heated or cooled if needed."
+        },
+        {
+          "title": "Commissioning",
+          "text": "Balance the room once, then check it again after any fit-out change."
+        }
+      ],
+      "note_title": "Not a hole in a wall",
+      "note_text": "Uncontrolled air brings dust, heat and insects with it.",
+      "image": "workshop.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "Your exhaust is only as good as the air coming back in.",
+      "subline": "We check both sides before recommending a bigger fan."
+    }
+  ],
+  "caption_en": "A kitchen exhaust is half of a pair. The fan pulls air out, and something has to replace it.\n\nWhen replacement air is missing, the symptoms look like fan problems. Doors are hard to open. Smoke hangs at head height. The flame pulls away from the burner. Grease and smells drift into the dining room instead of leaving the building.\n\nThe usual mistake is to fit a bigger fan. That makes the pressure worse. The right fix is a planned path for incoming air, sized to what the hood extracts.\n\nWe plan both sides of the system in Doha. Call +974 7713 4533 or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#KitchenExhaust",
+    "#MakeUpAir",
+    "#KitchenVentilation",
+    "#CommercialKitchen",
+    "#RestaurantDoha",
+    "#HVACDesign",
+    "#Doha",
+    "#Qatar",
+    "#KitchenDesign",
+    "#RestaurantOwner",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "نظام الشفط نصفان: مروحة تسحب الهواء، وشيء لا بد أن يعيده، وإلا بدأ المكان يقاوم المروحة.\n\nعندما يغيب هواء التعويض، تظهر الأعراض وكأنها مشكلة مروحة. أبواب يصعب فتحها، ودخان يبقى عند مستوى الرأس، ولهب ينفصل عن الموقد، ودهون وروائح تنتقل إلى صالة الطعام بدل أن تخرج من المبنى.\n\nالخطأ الشائع هو تركيب مروحة أكبر، وهذا يزيد الضغط سوءاً. الحل الصحيح مسار محسوب لهواء الدخول بمقاس يتوافق مع ما يسحبه الغطاء.\n\nنخطط للجانبين معاً في الدوحة. للاستفسار: ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#شفط_دخان",
+    "#تهوية_مطابخ",
+    "#هواء_التعويض",
+    "#مطاعم_قطر",
+    "#الدوحة",
+    "#مطابخ_تجارية",
+    "#تصميم_مطابخ",
+    "#صيانة_مطاعم"
+  ]
+}

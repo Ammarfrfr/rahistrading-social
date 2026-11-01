@@ -1,0 +1,87 @@
+{
+  "id": "10-fan-noise",
+  "topic": "Why commercial kitchen exhaust systems get loud",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "FAN NOISE",
+      "headline": "If the kitchen roars, the system is telling you something.",
+      "subline": "Noise is usually resistance, balance, or a fan working too hard.",
+      "image": "fan-motor.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Three common causes",
+      "intro": "Listen before you replace anything.",
+      "items": [
+        {
+          "title": "Duct velocity",
+          "text": "Air forced through a tight duct gets loud before it gets weak."
+        },
+        {
+          "title": "Fan balance",
+          "text": "Grease or a damaged blade makes the whole unit hum."
+        },
+        {
+          "title": "Mounting",
+          "text": "A fan bolted straight to structure sends noise into the building."
+        }
+      ],
+      "note_title": "What to listen for",
+      "note_text": "A new hum, a rattle at start-up, a pitch that climbs.",
+      "image": "fan.jpg"
+    },
+    {
+      "type": "info",
+      "title": "What actually quietens it",
+      "intro": "None of it is padding stuck to the ceiling.",
+      "items": [
+        {
+          "title": "Sizing",
+          "text": "A fan running inside its range is quieter than one at its limit."
+        },
+        {
+          "title": "Isolation",
+          "text": "Rubber mounts and flexible connections break the path."
+        },
+        {
+          "title": "Route",
+          "text": "Smooth bends and a straight outlet do more than insulation."
+        }
+      ],
+      "note_title": "Quiet is a spec",
+      "note_text": "Ask for it at design stage, not after handover.",
+      "image": "fan-roof.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "A loud kitchen is a symptom, not a personality.",
+      "subline": "We trace the noise before we sell a new fan."
+    }
+  ],
+  "caption_en": "Some kitchens are loud because they are busy. Others are loud because the exhaust is working against itself.\n\nThree things cause most of it. Air pushed through a duct that is too tight. A fan that has gone out of balance, usually from grease or a damaged blade. And a unit bolted straight onto the structure, so every vibration becomes building noise.\n\nA bigger fan rarely fixes any of those. It usually makes the first two worse. We measure the route, check the fan, and treat the mounting before recommending equipment.\n\nSend a voice note of the noise to +974 7713 4533, or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#KitchenExhaust",
+    "#FanNoise",
+    "#CommercialKitchen",
+    "#RestaurantDoha",
+    "#KitchenVentilation",
+    "#HVACDesign",
+    "#Doha",
+    "#Qatar",
+    "#KitchenMaintenance",
+    "#RestaurantOwner",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "بعض المطابخ صاخبة لأنها مزدحمة، وبعضها صاخب لأن نظام الشفط يعمل ضد نفسه.\n\nثلاثة أسباب تفسر معظم الضجيج: هواء يُدفع في قناة أضيق من اللازم، ومروحة فقدت توازنها عادةً بسبب الدهون أو ريشة تالفة، ووحدة مثبتة مباشرة على الهيكل فيتحول كل اهتزاز إلى ضجيج في المبنى.\n\nالمروحة الأكبر لا تحل أياً من ذلك، بل تزيد السببين الأولين سوءاً عادةً. نقيس المسار، ونفحص المروحة، ونعالج التثبيت قبل أن نقترح معدات جديدة.\n\nأرسل تسجيلاً صوتياً للضجيج على ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#شفط_دخان",
+    "#ضجيج_المروحة",
+    "#مطابخ_تجارية",
+    "#مطاعم_قطر",
+    "#الدوحة",
+    "#تهوية_مطابخ",
+    "#صيانة_مطاعم",
+    "#تصميم_مطابخ"
+  ]
+}

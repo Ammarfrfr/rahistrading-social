@@ -1,0 +1,85 @@
+{
+  "id": "03-axial-vs-centrifugal-fans",
+  "topic": "Axial versus centrifugal roof fans",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "ROOF FANS COMPARED",
+      "headline": "Two fans. Very different jobs.",
+      "subline": "Choose by duct length and resistance, not by the price tag.",
+      "image": "fan-roof.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Axial fan: air goes straight through",
+      "intro": "The blades push air in the direction it is already travelling.",
+      "items": [
+        {
+          "title": "Best on short runs",
+          "text": "A direct discharge through a wall or a short roof duct."
+        },
+        {
+          "title": "Moves a lot, pushes little",
+          "text": "Good volume at low resistance, and it suffers as filters load."
+        },
+        {
+          "title": "Simple and compact",
+          "text": "Fewer moving parts and a clear straight path for the air."
+        }
+      ],
+      "image": "fan.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Centrifugal fan: turned, then driven",
+      "intro": "Air enters at the centre, leaves under pressure.",
+      "items": [
+        {
+          "title": "Best on longer ductwork",
+          "text": "Keeps pulling where a straight fan would fall away."
+        },
+        {
+          "title": "Holds up against resistance",
+          "text": "Bends, filters and long runs add load. This copes."
+        },
+        {
+          "title": "Easier on the ear",
+          "text": "Less rush at the outlet, easier above a kitchen."
+        }
+      ],
+      "note_title": "The duct decides",
+      "note_text": "Both are roof-mounted. The route picks the type.",
+      "image": "fan-motor.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "Not sure which fan your duct needs?",
+      "subline": "Send the route and we will size it."
+    }
+  ],
+  "caption_en": "Axial or centrifugal? The real question is which duct you have, not which fan is better.\n\nAxial fans push air straight through and suit short, direct runs with little resistance. Centrifugal fans draw air in and drive it out under pressure, so they keep pulling against long ductwork, bends and loaded filters.\n\nChoosing by price alone usually means choosing twice. Send us your duct route and we will match the fan to it, roof-mounted and installed by our own team in Doha.\n\nCall +974 7713 4533 or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#Qatar",
+    "#Doha",
+    "#KitchenExhaust",
+    "#ExhaustFan",
+    "#CommercialKitchen",
+    "#KitchenVentilation",
+    "#RestaurantEquipment",
+    "#MechanicalEngineering",
+    "#ContractorsQatar",
+    "#StainlessSteel",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "مروحة محورية أم مروحة طرد مركزي؟ السؤال الحقيقي هو نوع القناة لديك، وليس أي المروحتين أفضل.\n\nالمروحة المحورية تدفع الهواء في مسار مستقيم، وتناسب المسارات القصيرة المباشرة ذات المقاومة المنخفضة. أما مروحة الطرد المركزي فتشحب الهواء إلى المركز وتقذفه بقوة دفع، فتبقى فعالة مع القنوات الطويلة والانحناءات والفلاتر الممتلئة.\n\nالاختيار على أساس السعر وحده يعني الشراء مرتين. أرسل لنا مسار القناة لديك وسنطابق المروحة معه، بتركيب على السطح وتنفيذ من فريقنا في الدوحة.\n\nللاستفسار: ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#قطر",
+    "#الدوحة",
+    "#شفط_دخان",
+    "#مروحة_شفط",
+    "#معدات_مطاعم",
+    "#تهوية_مطابخ",
+    "#مقاولات_قطر",
+    "#ستانلس_ستيل"
+  ]
+}

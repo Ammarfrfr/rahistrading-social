@@ -1,0 +1,89 @@
+{
+  "id": "07-plan-to-installation",
+  "topic": "From plan to installation: how we work",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "HOW WE WORK",
+      "headline": "Measured, built, installed. One team.",
+      "subline": "No gap between the drawing and the finished kitchen.",
+      "image": "welding.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Before we cut any steel",
+      "intro": "Measured on site, not estimated from a photo.",
+      "items": [
+        {
+          "title": "Site survey",
+          "text": "Ceiling height, gas, water and the line as built."
+        },
+        {
+          "title": "Duct route",
+          "text": "Where the air leaves the building, agreed first."
+        },
+        {
+          "title": "Fan position",
+          "text": "Chosen for the duct and roof, not the easy install."
+        },
+        {
+          "title": "Approved drawings",
+          "text": "You sign off the layout before manufacturing."
+        }
+      ],
+      "image": "workshop.jpg"
+    },
+    {
+      "type": "info",
+      "title": "Then we build and fit",
+      "intro": "Fabrication, assembly and fitting, all in house.",
+      "items": [
+        {
+          "title": "Workshop fabrication",
+          "text": "Cut, formed, welded and trial-assembled by one team."
+        },
+        {
+          "title": "Installation",
+          "text": "Delivered, sealed and fixed in place on site."
+        },
+        {
+          "title": "Handover",
+          "text": "Filters, cleaning and daily use explained to staff."
+        }
+      ],
+      "note_title": "One point of contact",
+      "note_text": "The team that quoted the job is the team that answers for it.",
+      "image": "install.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "Planning a kitchen this year?",
+      "subline": "Talk to the team that builds and installs it."
+    }
+  ],
+  "caption_en": "From measurement to handover, one team answers for the whole kitchen.\n\nWe survey the site and agree the duct route before any steel is cut. The cooking line, the ceiling height and where the air leaves the building all shape the design, and you approve the layout before fabrication begins.\n\nUnits are trial-assembled in our workshop, so problems stay where they are easy to fix. On site we fit, seal and install the system, then walk your staff through the filters and daily use.\n\nEstablished in Doha since 2005. Call +974 7713 4533 or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#Qatar",
+    "#Doha",
+    "#KitchenExhaust",
+    "#CommercialKitchen",
+    "#RestaurantFitOut",
+    "#StainlessSteelFabrication",
+    "#KitchenDesign",
+    "#ContractorsQatar",
+    "#HotelKitchen",
+    "#RestaurantOwner",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "من القياس إلى التسليم، فريق واحد مسؤول عن المطبخ بالكامل.\n\nنزور الموقع ونحدد مسار القناة قبل قص أي قطعة حديد. خط الطهي وارتفاع السقف ومكان خروج الهواء من المبنى هي ما يشكّل التصميم، وأنتم تعتمدون المخطط قبل بدء التصنيع.\n\nنقوم بتجميع الوحدات تجريبياً في ورشتنا، لتبقى المشاكل في مكان يسهل إصلاحها فيه. وفي الموقع نثبّت النظام ونحكم إغلاقه، ثم نشرح لفريق المطبخ طريقة التعامل مع الفلاتر والاستخدام اليومي.\n\nنعمل في الدوحة منذ عام 2005. للاستفسار: ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#قطر",
+    "#الدوحة",
+    "#شفط_دخان",
+    "#تصنيع_ستانلس_ستيل",
+    "#تجهيز_مطاعم",
+    "#مطاعم_قطر",
+    "#معدات_مطاعم",
+    "#مقاولات_قطر"
+  ]
+}

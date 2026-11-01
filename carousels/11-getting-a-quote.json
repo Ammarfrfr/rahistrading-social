@@ -1,0 +1,87 @@
+{
+  "id": "11-getting-a-quote",
+  "topic": "What to send a supplier so an exhaust quote is accurate",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "GETTING A QUOTE",
+      "headline": "Send five things and the price gets real.",
+      "subline": "Vague briefs produce vague numbers, then variations later.",
+      "image": "install.jpg"
+    },
+    {
+      "type": "info",
+      "title": "What we need to see",
+      "intro": "A site visit goes faster when these are ready.",
+      "items": [
+        {
+          "title": "The cooking line",
+          "text": "How many appliances, and how they are arranged."
+        },
+        {
+          "title": "The route",
+          "text": "Where the duct can go, and where it can leave the roof."
+        },
+        {
+          "title": "The building",
+          "text": "Ceiling height, access, and who else is on site."
+        }
+      ],
+      "note_title": "Photos help",
+      "note_text": "One wide shot and one of the roof outlet saves a visit.",
+      "image": "workshop.jpg"
+    },
+    {
+      "type": "info",
+      "title": "What changes the price",
+      "intro": "Same kitchen, very different sums.",
+      "items": [
+        {
+          "title": "Steel grade",
+          "text": "The right grade for each part, not one grade everywhere."
+        },
+        {
+          "title": "Duct length",
+          "text": "Distance and bends decide the fan and the steel."
+        },
+        {
+          "title": "Access",
+          "text": "A roof you can reach is cheaper than one you cannot."
+        }
+      ],
+      "note_title": "One scope",
+      "note_text": "Design, fabrication and installation with one supplier.",
+      "image": "welding.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "Send the layout and we will price the whole system.",
+      "subline": "No guesswork, and no duct missing from the quote."
+    }
+  ],
+  "caption_en": "Most exhaust quotes are guesses dressed up as prices. Not because suppliers are careless, but because the brief was three lines and a photo of a hood.\n\nFive things turn that around: the cooking line, the route the duct can take, the building and its access, the roof outlet, and how soon you need it. With those, a supplier can price the steel, the fan and the labour without inventing allowances.\n\nIt also protects you. A quote built on a real route has fewer variations later, when the duct meets a beam nobody mentioned.\n\nSend your layout to +974 7713 4533 or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#KitchenExhaust",
+    "#CommercialKitchen",
+    "#RestaurantDoha",
+    "#KitchenDesign",
+    "#RestaurantOwner",
+    "#StainlessSteel",
+    "#KitchenVentilation",
+    "#Doha",
+    "#Qatar",
+    "#HotelKitchen",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "معظم عروض أسعار الشفط تخمينات في ثوب أرقام، لا لأن المورّد مهمل، بل لأن الطلب كان ثلاثة أسطر وصورة لغطاء.\n\nخمسة أشياء تغيّر ذلك: خط الطهي، والمسار الذي يمكن أن تسلكه القناة، والمبنى ومداخله، ومخرج السطح، والموعد الذي تحتاجه فيه. بهذه يمكن للمورّد أن يسعّر الحديد والمروحة والعمالة دون مبالغ احتياطية مخترعة.\n\nوهذا يحميك أيضاً. فالعرض المبني على مسار حقيقي يكون فيه تعديلات أقل لاحقاً، حين تصطدم القناة بجسر لم يذكره أحد.\n\nأرسل مخططك على ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#شفط_دخان",
+    "#مطابخ_تجارية",
+    "#مطاعم_قطر",
+    "#الدوحة",
+    "#تصميم_مطابخ",
+    "#ستانلس_ستيل",
+    "#تهوية_مطابخ",
+    "#معدات_مطاعم"
+  ]
+}

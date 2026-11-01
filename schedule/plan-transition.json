@@ -1,0 +1,30 @@
+[
+  {
+    "id": "02-parts-of-an-exhaust-system",
+    "due_at": "2026-10-24T19:30:00+03:00"
+  },
+  {
+    "id": "03-axial-vs-centrifugal-fans",
+    "due_at": "2026-10-25T12:30:00+03:00"
+  },
+  {
+    "id": "06-grease-and-fire",
+    "due_at": "2026-10-26T12:30:00+03:00"
+  },
+  {
+    "id": "08-duct-route",
+    "due_at": "2026-10-27T19:30:00+03:00"
+  },
+  {
+    "id": "09-make-up-air",
+    "due_at": "2026-10-28T12:30:00+03:00"
+  },
+  {
+    "id": "10-fan-noise",
+    "due_at": "2026-10-29T19:30:00+03:00"
+  },
+  {
+    "id": "11-getting-a-quote",
+    "due_at": "2026-10-30T12:30:00+03:00"
+  }
+]

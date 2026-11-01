@@ -1,0 +1,87 @@
+{
+  "id": "08-duct-route",
+  "topic": "Duct route and resistance: why short, straight runs work",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "DUCT ROUTE",
+      "headline": "Every bend costs you airflow.",
+      "subline": "The shortest run between hood and roof is the one that works.",
+      "image": "duct.jpg"
+    },
+    {
+      "type": "info",
+      "title": "What slows the air",
+      "intro": "Resistance adds up before the fan ever sees it.",
+      "items": [
+        {
+          "title": "Bends",
+          "text": "Two tight elbows can cost more than a longer straight run."
+        },
+        {
+          "title": "Length",
+          "text": "Distance is fine, if the fan was chosen for that distance."
+        },
+        {
+          "title": "Narrow sections",
+          "text": "One squeezed length strangles everything after it."
+        }
+      ],
+      "note_title": "Draw it first",
+      "note_text": "A route on paper is cheaper to change than a route in steel.",
+      "image": "duct-alt.jpg"
+    },
+    {
+      "type": "info",
+      "title": "When the route is fixed",
+      "intro": "You can still choose the right fan for the building you have.",
+      "items": [
+        {
+          "title": "Measure the whole path",
+          "text": "Not the straight line. The path the air actually travels."
+        },
+        {
+          "title": "Count every bend",
+          "text": "Offsets, transitions and roof turns all take their share."
+        },
+        {
+          "title": "Match the fan to that",
+          "text": "A fan sized to the hood alone will lose the fight."
+        }
+      ],
+      "note_title": "Roof space",
+      "note_text": "The outlet needs room to breathe, not a corner behind a parapet.",
+      "image": "duct.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "Send the route, we will check what it costs you.",
+      "subline": "A drawing and two photos are usually enough to start."
+    }
+  ],
+  "caption_en": "Most weak extractors are not weak fans. They are long, twisting ducts that nobody added up before the fan was chosen.\n\nAir does not care about the straight line on the drawing. It follows the real path: up, across, around a column, through a narrow section, then out over the roof. Each of those turns takes pressure the fan has to pay for.\n\nIf the kitchen already exists, we measure the path as built and match the fan to it. If it is still on paper, we redraw the route while it is still cheap to change.\n\nSend your layout to +974 7713 4533 or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#KitchenExhaust",
+    "#Ductwork",
+    "#HVACDesign",
+    "#CommercialKitchen",
+    "#RestaurantDoha",
+    "#KitchenVentilation",
+    "#Doha",
+    "#Qatar",
+    "#StainlessSteel",
+    "#KitchenDesign",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "معظم أنظمة الشفط الضعيفة ليست مروحة ضعيفة، بل قنوات طويلة ومتعرجة لم يحسبها أحد قبل اختيار المروحة.\n\nالهواء لا يهمه الخط المستقيم في الرسم، بل المسار الحقيقي: صعوداً، ثم انعطافاً حول عمود، ثم مقطعاً ضيقاً، ثم خروجاً فوق السطح. كل انعطاف يستهلك ضغطاً تدفعه المروحة.\n\nإذا كان المطبخ قائماً، نقيس المسار كما هو ونختار المروحة المناسبة له. وإذا كان على الورق، نعيد رسم المسار قبل أن يصبح تغييره مكلفاً.\n\nللاستفسار: ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#شفط_دخان",
+    "#قنوات_هواء",
+    "#مطابخ_تجارية",
+    "#مطاعم_قطر",
+    "#الدوحة",
+    "#تهوية_مطابخ",
+    "#ستانلس_ستيل",
+    "#تصميم_مطابخ"
+  ]
+}

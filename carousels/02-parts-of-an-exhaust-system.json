@@ -1,0 +1,85 @@
+{
+  "id": "02-parts-of-an-exhaust-system",
+  "topic": "The three main parts of a kitchen exhaust system: hood, duct and fan",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "EXHAUST SYSTEM, EXPLAINED",
+      "headline": "Three parts. Miss one and the kitchen never clears.",
+      "subline": "The hood, the duct and the fan are one system, not three purchases.",
+      "image": "hood.jpg"
+    },
+    {
+      "type": "info",
+      "title": "The hood captures",
+      "intro": "It sits over the cooking line and takes smoke, heat and grease away.",
+      "items": [
+        {
+          "title": "Canopy size",
+          "text": "Narrower than the line, smoke slips past the edges."
+        },
+        {
+          "title": "Grease filters",
+          "text": "Grease stops here, so clean them on a routine."
+        },
+        {
+          "title": "Fitting height",
+          "text": "Too high, and smoke spreads before it is caught."
+        }
+      ],
+      "note_title": "Check the ends",
+      "note_text": "Most escaping smoke leaves at the open ends of a canopy.",
+      "image": "hood-filters.jpg"
+    },
+    {
+      "type": "info",
+      "title": "The duct carries, the fan pulls",
+      "intro": "A duct without a fan is just a metal box.",
+      "items": [
+        {
+          "title": "Duct route",
+          "text": "Short, straight runs beat long ones with bends."
+        },
+        {
+          "title": "The fan",
+          "text": "Sized to hood and duct. Too small clears nothing."
+        },
+        {
+          "title": "Discharge",
+          "text": "Air must leave the building, not the ceiling void."
+        }
+      ],
+      "image": "fan.jpg"
+    },
+    {
+      "type": "contact",
+      "headline": "Three parts. One system. One supplier.",
+      "subline": "Send your layout and we will check all three."
+    }
+  ],
+  "caption_en": "Hood, duct, fan. Most kitchens buy the three separately, then wonder why the room still fills with smoke.\n\nThe hood captures, the duct carries, the fan pulls. Each one limits what the other two can do. A strong fan under a narrow canopy still loses smoke at the edges, and a wide hood on a long twisting duct still feels weak at the cooking line.\n\nBefore you replace anything, look at all three together. We plan, manufacture and install complete exhaust systems in Doha, in the steel grade that suits each part.\n\nCall +974 7713 4533 or message @rahissheikhtrading for a site check.",
+  "hashtags_en": [
+    "#Qatar",
+    "#Doha",
+    "#KitchenExhaust",
+    "#CommercialKitchen",
+    "#RestaurantEquipment",
+    "#KitchenVentilation",
+    "#StainlessSteel",
+    "#KitchenDesign",
+    "#RestaurantOwner",
+    "#HotelKitchen",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "الغطاء، القناة، المروحة. كثير من المطابخ تشتري هذه الأجزاء الثلاثة منفصلة، ثم تتساءل لماذا يبقى الدخان داخل المكان.\n\nالغطاء يلتقط الدخان، والقناة تنقله، والمروحة تسحبه. وكل جزء يحدّ من قدرة الجزأين الآخرين. فمروحة قوية تحت غطاء ضيق ستترك الدخان يتسرب من الأطراف، وغطاء واسع موصول بقناة طويلة متعرجة سيبقى ضعيفاً عند خط الطهي.\n\nقبل أن تستبدل أي جزء، انظر إلى الأجزاء الثلاثة معاً. نحن نخطط ونصنّع ونركّب أنظمة الشفط الكاملة في الدوحة، وبالنوع المناسب من الستانلس لكل جزء.\n\nللاستفسار: ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#قطر",
+    "#الدوحة",
+    "#مطاعم_قطر",
+    "#معدات_مطاعم",
+    "#شفط_دخان",
+    "#ستانلس_ستيل",
+    "#مطابخ_تجارية",
+    "#تصميم_مطابخ"
+  ]
+}

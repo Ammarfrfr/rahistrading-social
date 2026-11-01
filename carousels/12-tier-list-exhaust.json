@@ -1,0 +1,74 @@
+{
+  "id": "12-tier-list-exhaust",
+  "topic": "Tier list: the exhaust decisions that actually matter",
+  "format": "tier-list",
+  "slides": [
+    {
+      "type": "hook",
+      "kicker": "RANKED WORST TO BEST",
+      "headline": "The exhaust decisions that actually matter.",
+      "subline": "Most kitchens start at F and never find out why.",
+      "image": "duct.jpg"
+    },
+    {
+      "type": "tier",
+      "tier": "F",
+      "title": "Buying a bigger fan",
+      "text": "The reflex when extraction fails. It usually makes the pressure worse and leaves the real cause in place. Fix the route first, then size the fan for it."
+    },
+    {
+      "type": "tier",
+      "tier": "A",
+      "title": "Planning make-up air",
+      "text": "Replacement air has to be designed in. Without it the fan starves, doors slam and smoke stays at head height. Cheap to plan, expensive to ignore."
+    },
+    {
+      "type": "tier",
+      "tier": "B",
+      "title": "Getting the hood right",
+      "text": "Width, overhang and fitting height decide how much smoke ever reaches the duct. The best fan cannot catch what the canopy lets past."
+    },
+    {
+      "type": "tier",
+      "tier": "C",
+      "title": "Matching fan to the run",
+      "text": "Not the biggest fan, the right one. Sized to the hood and to the resistance of the real route, not the catalogue headline."
+    },
+    {
+      "type": "tier",
+      "tier": "S",
+      "title": "The duct route",
+      "text": "Short, straight and settled before anything is ordered. Get this right and every other choice gets easier. Get it wrong and nothing else saves you."
+    },
+    {
+      "type": "contact",
+      "headline": "Rank your own system before you spend.",
+      "subline": "Send the layout and we will tell you which tier is failing."
+    }
+  ],
+  "caption_en": "Most kitchens fix the exhaust in the wrong order: from the bottom of this list up. That is why the same problem returns.\n\nF is buying a bigger fan. It feels decisive, it rarely fixes anything, and it often makes the pressure worse.\n\nA, B and C are the parts that do the work: make-up air, the hood, and a fan matched to the real run. Most systems improve the moment those three are treated as one design.\n\nS is the duct route. Short, straight, decided before anything is ordered. Invisible, and it decides everything downstream.\n\nSend your layout to +974 7713 4533 or message @rahissheikhtrading.",
+  "hashtags_en": [
+    "#KitchenExhaust",
+    "#TierList",
+    "#KitchenDesign",
+    "#CommercialKitchen",
+    "#RestaurantDoha",
+    "#KitchenVentilation",
+    "#Ductwork",
+    "#Doha",
+    "#Qatar",
+    "#RestaurantOwner",
+    "#RahisSheikhTrading"
+  ],
+  "caption_ar": "معظم المطابخ تصلح الشفط بالترتيب الخطأ: تبدأ من أسفل القائمة وتصعد، ولهذا يعود نفس المشكلة.\n\nالتقييم F هو شراء مروحة أكبر. يبدو قراراً حاسماً، لكنه نادراً ما يحل شيئاً، وغالباً يزيد الضغط سوءاً.\n\nأما A وB وC فهي الأجزاء التي تقوم بالعمل: هواء التعويض، والغطاء، ومروحة بمقاس المسار الحقيقي. معظم الأنظمة تتحسن بمجرد التعامل مع هذه الثلاثة كتصميم واحد.\n\nوالتقييم S هو مسار القناة: قصير ومستقيم ويُحسم قبل طلب أي شيء. ممل وغير مرئي، لكنه يحدد كل ما يأتي بعده.\n\nأرسل مخططك على ‎+974 7713 4533 أو راسلونا على @rahissheikhtrading",
+  "hashtags_ar": [
+    "#شفط_دخان",
+    "#مطابخ_تجارية",
+    "#تصميم_مطابخ",
+    "#مطاعم_قطر",
+    "#الدوحة",
+    "#تهوية_مطابخ",
+    "#معدات_مطاعم",
+    "#ستانلس_ستيل"
+  ]
+}
